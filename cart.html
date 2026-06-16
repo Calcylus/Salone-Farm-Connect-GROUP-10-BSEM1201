@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Cart | SaloneFarm Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <meta name="description" content="SaloneFarm Connect is a Sierra Leone digital agriculture static website prototype for farmer advisory and market access.">
+</head>
+<body data-page="cart">
+<header class="site-header">
+    <nav class="navbar container">
+        <a class="brand" href="index.html" aria-label="SaloneFarm Connect home">
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="logo-img">
+            <div class="brand-text">
+                <strong>SaloneFarm Connect</strong>
+                <span>Farmer Advisory & Market Access</span>
+            </div>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="advisory.html" class="">Advisory</a></li>
+            <li><a href="market.html" class="">Market</a></li>
+            <li><a href="farmer-dashboard.html" class="">Farmer</a></li>
+            <li><a href="cart.html" class="active">Cart</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+            <li data-auth="guest"><a href="login.html" class="">Login</a></li>
+            <li data-auth="guest"><a href="register.html" class="">Register</a></li>
+            <li data-auth="user"><a href="profile.html" class="">Profile</a></li>
+            <li data-auth="user"><a href="#" id="logoutLink" class="">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+<section class="sub-hero page-section">
+    <div class="container sub-hero-grid">
+        <div>
+            <span class="eyebrow">Order Cart</span>
+            <h1>Review selected products before placing an order.</h1>
+            <p>Customers can add marketplace products to this cart and submit a static order request.</p>
+            <a href="market.html" class="btn secondary">Continue Shopping</a>
+        </div>
+        <img src="images/freetown-busy-market.jpg" alt="Market in Freetown Sierra Leone">
+    </div>
+</section>
+<section class="page-section">
+    <div class="container cart-layout">
+        <div class="cart-panel">
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+        </div>
+        <form id="checkoutForm" class="panel-form checkout-form">
+            <h2>Customer Order Details</h2>
+            <label>Customer Name</label><input id="customerName" placeholder="Enter customer name" required>
+            <label>Phone Number</label><input id="customerPhone" placeholder="Enter phone number" required>
+            <label>Delivery Location</label><input id="customerLocation" placeholder="Example: Freetown, Bo, Kenema" required>
+            <label>Order Note</label><textarea id="customerNote" placeholder="Add delivery or pickup note"></textarea>
+            <button class="btn primary" type="submit">Place Order</button>
+            <p id="orderMessage" class="success-message"></p>
+        </form>
+    </div>
+</section>
+
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="footer-logo">
+            <h3>SaloneFarm Connect</h3>
+            <p>A static Web Design 1 digital agriculture solution focused on Sierra Leone.</p>
+        </div>
+        <div>
+            <h4>Project Pages</h4>
+            <a href="advisory.html">Advisory</a>
+            <a href="market.html">Market</a>
+            <a href="farmer-dashboard.html">Farmer Dashboard</a>
+            <a href="cart.html">Order Cart</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>SDG Alignment</h4>
+            <p>SDG 2: Zero Hunger</p>
+            <p>SDG 8: Decent Work</p>
+            <p>SDG 9: Innovation</p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 SaloneFarm Connect • Group 10 • DCOMP204 Web Design 1</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

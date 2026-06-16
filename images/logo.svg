@@ -1,0 +1,10 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="220" rx="52" fill="#0b3d2e"/>
+  <circle cx="110" cy="110" r="82" fill="#0f5138" stroke="#d7f8c2" stroke-width="7"/>
+  <path d="M69 127c7-41 35-67 81-75-3 46-27 75-68 87 8-24 24-44 50-60-31 11-52 29-63 48z" fill="#7ee081"/>
+  <path d="M57 150c36-2 69-12 99-31" stroke="#f8d36b" stroke-width="9" stroke-linecap="round"/>
+  <path d="M76 167h69" stroke="#f8d36b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M63 181h95" stroke="#d7f8c2" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+  <text x="110" y="44" text-anchor="middle" font-family="Tahoma, Arial" font-size="18" font-weight="700" fill="#f6fff1">SALONE</text>
+  <text x="110" y="205" text-anchor="middle" font-family="Tahoma, Arial" font-size="18" font-weight="700" fill="#f6fff1">FARM</text>
+</svg>

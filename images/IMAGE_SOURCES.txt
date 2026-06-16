@@ -1,0 +1,45 @@
+Image sources used in SaloneFarm Connect
+All images are stored locally inside the images folder for the submitted project.
+
+1. freetown-small-farm.jpg
+   Source: Wikimedia Commons
+   Page: https://commons.wikimedia.org/wiki/File:Real_African_people_working_on_their_little_farm_in_Freetown.jpg
+   Description: People working on a small farm in Freetown, Sierra Leone.
+
+2. rice-farming-rolako-bombali.jpg
+   Source: Wikimedia Commons
+   Page: https://commons.wikimedia.org/wiki/File:Sierra_Leone_rice_farming.jpg
+   Description: Rice farming in Rolako, Bombali District, Sierra Leone.
+
+3. rice-farmer-sierra-leone.jpg
+   Source: Wikimedia Commons / USAID
+   Page: https://commons.wikimedia.org/wiki/File:Sierra_Leone_rice_farmer.jpg
+   Description: Rice farmer in Sierra Leone showing part of his harvest.
+
+4. rice-fields-rokupr.jpg
+   Source: Wikimedia Commons
+   Page: https://commons.wikimedia.org/wiki/File:Rice_fields_in_the_mangroves_around_Rokupr,_Sierra_Leone_-_panoramio.jpg
+   Description: Rice fields in the mangroves around Rokupr, Sierra Leone.
+
+5. kenema-market.jpg
+   Source: Wikimedia Commons
+   Page: https://commons.wikimedia.org/wiki/File:Kenema-Market.jpg
+   Description: Fishery market in Kenema, Sierra Leone.
+
+6. freetown-busy-market.jpg
+   Source: Wikimedia Commons
+   Page: https://commons.wikimedia.org/wiki/File:This_is_a_unique_picture_of_busy_market_in_Freetown_Sierra_Leone.jpg
+   Description: Busy market in Freetown, Sierra Leone.
+
+7. cassava-leaves-saka-saka.jpg
+   Source: Wikimedia Commons
+   Page: https://commons.wikimedia.org/wiki/File:Saka-saka_-_cassava_leaves_in_mortar_and_pestle.jpg
+   Description: Cassava leaves preparation, relevant to Sierra Leone food and farming context.
+
+8. logo.svg
+   Source: Self-created SVG logo for SaloneFarm Connect.
+   Description: Green agriculture logo used instead of text initials.
+
+Product images folder:
+- images/products/*.svg
+  Description: Custom local SVG product images created for this static presentation prototype so marketplace products do not reuse the same thumbnails.

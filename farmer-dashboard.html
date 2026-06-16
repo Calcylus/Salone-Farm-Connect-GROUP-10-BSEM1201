@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard | SaloneFarm Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <meta name="description" content="SaloneFarm Connect is a Sierra Leone digital agriculture static website prototype for farmer advisory and market access.">
+</head>
+<body data-page="farmer-dashboard">
+<header class="site-header">
+    <nav class="navbar container">
+        <a class="brand" href="index.html" aria-label="SaloneFarm Connect home">
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="logo-img">
+            <div class="brand-text">
+                <strong>SaloneFarm Connect</strong>
+                <span>Farmer Advisory & Market Access</span>
+            </div>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="advisory.html" class="">Advisory</a></li>
+            <li><a href="market.html" class="">Market</a></li>
+            <li><a href="farmer-dashboard.html" class="active">Farmer</a></li>
+            <li><a href="cart.html" class="">Cart</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+            <li data-auth="guest"><a href="login.html" class="">Login</a></li>
+            <li data-auth="guest"><a href="register.html" class="">Register</a></li>
+            <li data-auth="user"><a href="profile.html" class="">Profile</a></li>
+            <li data-auth="user"><a href="#" id="logoutLink" class="">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+<section class="sub-hero page-section">
+    <div class="container sub-hero-grid">
+        <div>
+            <span class="eyebrow">Farmer Dashboard</span>
+            <h1>Upload produce and manage your own product table.</h1>
+            <p>This dashboard is different for farmers. It shows the registered farmer profile and only the products added by that specific farmer.</p>
+            <div class="stacked-buttons"><a href="register.html" class="btn secondary" data-auth="guest">Register as Farmer</a><a href="login.html" class="btn primary" data-auth="guest">Login</a><a href="profile.html" class="btn secondary" data-auth="user">View Profile</a></div>
+        </div>
+        <img src="images/cassava-leaves-saka-saka.jpg" alt="Cassava leaves preparation in Sierra Leone">
+    </div>
+</section>
+<section class="page-section">
+    <div class="container dashboard-layout">
+        <aside class="profile-card" id="farmerSummary"></aside>
+        <div class="dashboard-main">
+            <form id="productForm" class="panel-form">
+                <h2>Upload New Product</h2>
+                <div class="form-grid">
+                    <div><label>Product Name</label><input id="productName" placeholder="Example: Fresh Rice" required></div>
+                    <div><label>Category</label><select id="productCategory"><option>Rice</option><option>Cassava</option><option>Vegetables</option><option>Palm Oil</option><option>Groundnut</option></select></div>
+                    <div><label>Quantity</label><input id="productQuantity" placeholder="Example: 10 bags" required></div>
+                    <div><label>Price</label><input id="productPrice" placeholder="Example: NLe 450 per bag" required></div>
+                    <div><label>District</label><input id="productDistrict" placeholder="Example: Kenema" required></div>
+                    <div><label>Contact</label><input id="productContact" placeholder="Phone number" required></div>
+                </div>
+                <label>Description</label><textarea id="productDescription" placeholder="Describe your product quality, harvest date, pickup location..."></textarea>
+                <button class="btn primary" type="submit">Publish to Market</button>
+                <p id="productMessage" class="success-message"></p>
+            </form>
+            <div class="table-panel">
+                <h2>My Previously Added Products</h2>
+                <div class="table-wrap"><table><thead><tr><th>Product</th><th>Category</th><th>Quantity</th><th>Price</th><th>Status</th><th>Action</th></tr></thead><tbody id="farmerProductsTable"></tbody></table></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="footer-logo">
+            <h3>SaloneFarm Connect</h3>
+            <p>A static Web Design 1 digital agriculture solution focused on Sierra Leone.</p>
+        </div>
+        <div>
+            <h4>Project Pages</h4>
+            <a href="advisory.html">Advisory</a>
+            <a href="market.html">Market</a>
+            <a href="farmer-dashboard.html">Farmer Dashboard</a>
+            <a href="cart.html">Order Cart</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>SDG Alignment</h4>
+            <p>SDG 2: Zero Hunger</p>
+            <p>SDG 8: Decent Work</p>
+            <p>SDG 9: Innovation</p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 SaloneFarm Connect • Group 10 • DCOMP204 Web Design 1</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

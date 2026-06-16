@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market | SaloneFarm Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <meta name="description" content="SaloneFarm Connect is a Sierra Leone digital agriculture static website prototype for farmer advisory and market access.">
+</head>
+<body data-page="market">
+<header class="site-header">
+    <nav class="navbar container">
+        <a class="brand" href="index.html" aria-label="SaloneFarm Connect home">
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="logo-img">
+            <div class="brand-text">
+                <strong>SaloneFarm Connect</strong>
+                <span>Farmer Advisory & Market Access</span>
+            </div>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="advisory.html" class="">Advisory</a></li>
+            <li><a href="market.html" class="active">Market</a></li>
+            <li><a href="farmer-dashboard.html" class="">Farmer</a></li>
+            <li><a href="cart.html" class="">Cart</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+            <li data-auth="guest"><a href="login.html" class="">Login</a></li>
+            <li data-auth="guest"><a href="register.html" class="">Register</a></li>
+            <li data-auth="user"><a href="profile.html" class="">Profile</a></li>
+            <li data-auth="user"><a href="#" id="logoutLink" class="">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+<section class="sub-hero page-section">
+    <div class="container sub-hero-grid">
+        <div>
+            <span class="eyebrow">Marketplace</span>
+            <h1>Published farm products for customers in Sierra Leone.</h1>
+            <p>Products uploaded by farmers appear here. Customers can browse many produce items, add them to the cart, review orders, and submit a static checkout request.</p>
+            <a href="cart.html" class="btn primary">View Order Cart</a>
+        </div>
+        <img src="images/kenema-market.jpg" alt="Kenema Market in Sierra Leone">
+    </div>
+</section>
+<section class="page-section">
+    <div class="container market-toolbar">
+        <div><h2>Available Produce</h2><p>Seeded market products and farmer-uploaded items are shown below.</p></div>
+        <select id="marketFilter" onchange="renderMarket()"><option value="all">All Produce</option><option value="Rice">Rice</option><option value="Cassava">Cassava</option><option value="Vegetables">Vegetables</option><option value="Palm Oil">Palm Oil</option><option value="Groundnut">Groundnut</option></select>
+    </div>
+    <div class="container product-grid" id="marketProducts"></div>
+</section>
+
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="footer-logo">
+            <h3>SaloneFarm Connect</h3>
+            <p>A static Web Design 1 digital agriculture solution focused on Sierra Leone.</p>
+        </div>
+        <div>
+            <h4>Project Pages</h4>
+            <a href="advisory.html">Advisory</a>
+            <a href="market.html">Market</a>
+            <a href="farmer-dashboard.html">Farmer Dashboard</a>
+            <a href="cart.html">Order Cart</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>SDG Alignment</h4>
+            <p>SDG 2: Zero Hunger</p>
+            <p>SDG 8: Decent Work</p>
+            <p>SDG 9: Innovation</p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 SaloneFarm Connect • Group 10 • DCOMP204 Web Design 1</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

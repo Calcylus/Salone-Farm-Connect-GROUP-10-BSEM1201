@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | SaloneFarm Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <meta name="description" content="SaloneFarm Connect is a Sierra Leone digital agriculture static website prototype for farmer advisory and market access.">
+</head>
+<body data-page="profile">
+<header class="site-header">
+    <nav class="navbar container">
+        <a class="brand" href="index.html" aria-label="SaloneFarm Connect home">
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="logo-img">
+            <div class="brand-text">
+                <strong>SaloneFarm Connect</strong>
+                <span>Farmer Advisory & Market Access</span>
+            </div>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="advisory.html" class="">Advisory</a></li>
+            <li><a href="market.html" class="">Market</a></li>
+            <li><a href="farmer-dashboard.html" class="">Farmer</a></li>
+            <li><a href="cart.html" class="">Cart</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+            <li data-auth="guest"><a href="login.html" class="">Login</a></li>
+            <li data-auth="guest"><a href="register.html" class="">Register</a></li>
+            <li data-auth="user"><a href="profile.html" class="active">Profile</a></li>
+            <li data-auth="user"><a href="#" id="logoutLink" class="">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+<section class="sub-hero page-section">
+    <div class="container sub-hero-grid">
+        <div>
+            <span class="eyebrow">User Profile</span>
+            <h1>Your registered details appear here.</h1>
+            <p>This page demonstrates a profile feature using browser localStorage. It works without a backend for presentation purposes.</p>
+        </div>
+        <img src="images/rice-farmer-sierra-leone.jpg" alt="Sierra Leone farmer profile image">
+    </div>
+</section>
+<section class="page-section">
+    <div class="container profile-layout">
+        <div id="profileOutput" class="profile-output"></div>
+        <div class="presentation-box">
+            <h2>Profile Actions</h2>
+            <p>Use these buttons depending on your account type.</p>
+            <div class="stacked-buttons">
+                <a href="farmer-dashboard.html" class="btn primary">Go to Farmer Dashboard</a>
+                <a href="market.html" class="btn secondary">Browse Market</a>
+                <button class="btn danger" onclick="clearProfile()">Clear Demo Profile</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="footer-logo">
+            <h3>SaloneFarm Connect</h3>
+            <p>A static Web Design 1 digital agriculture solution focused on Sierra Leone.</p>
+        </div>
+        <div>
+            <h4>Project Pages</h4>
+            <a href="advisory.html">Advisory</a>
+            <a href="market.html">Market</a>
+            <a href="farmer-dashboard.html">Farmer Dashboard</a>
+            <a href="cart.html">Order Cart</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>SDG Alignment</h4>
+            <p>SDG 2: Zero Hunger</p>
+            <p>SDG 8: Decent Work</p>
+            <p>SDG 9: Innovation</p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 SaloneFarm Connect • Group 10 • DCOMP204 Web Design 1</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

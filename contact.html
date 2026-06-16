@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SaloneFarm Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <meta name="description" content="Contact SaloneFarm Connect for questions about farmer advisory, the marketplace, or the DCOMP204 Web Design 1 project.">
+</head>
+<body data-page="contact">
+<header class="site-header">
+    <nav class="navbar container">
+        <a class="brand" href="index.html" aria-label="SaloneFarm Connect home">
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="logo-img">
+            <div class="brand-text">
+                <strong>SaloneFarm Connect</strong>
+                <span>Farmer Advisory & Market Access</span>
+            </div>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="advisory.html" class="">Advisory</a></li>
+            <li><a href="market.html" class="">Market</a></li>
+            <li><a href="farmer-dashboard.html" class="">Farmer</a></li>
+            <li><a href="cart.html" class="">Cart</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li data-auth="guest"><a href="login.html" class="">Login</a></li>
+            <li data-auth="guest"><a href="register.html" class="">Register</a></li>
+            <li data-auth="user"><a href="profile.html" class="">Profile</a></li>
+            <li data-auth="user"><a href="#" id="logoutLink" class="">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+<section class="sub-hero page-section">
+    <div class="container sub-hero-grid">
+        <div>
+            <span class="eyebrow">Contact</span>
+            <h1>Get in touch with the SaloneFarm Connect team.</h1>
+            <p>Send a message about the platform, the project, or a farmer/customer question. This is a static prototype, so the form below confirms your message on screen rather than sending an email.</p>
+        </div>
+        <img src="images/freetown-small-farm.jpg" alt="Small urban farm in Freetown, Sierra Leone">
+    </div>
+</section>
+<section class="page-section">
+    <div class="container auth-grid">
+        <form id="contactForm" class="panel-form auth-form">
+            <h2>Send a Message</h2>
+            <label>Full Name</label>
+            <input id="contactName" placeholder="Enter your full name" required>
+            <label>Email or Phone</label>
+            <input id="contactEmail" placeholder="Enter email or phone number" required>
+            <label>Subject</label>
+            <input id="contactSubject" placeholder="Example: Question about farmer registration" required>
+            <label>Message</label>
+            <textarea id="contactMessage" placeholder="Write your message here" required></textarea>
+            <button class="btn primary" type="submit">Send Message</button>
+            <div id="contactMessageStatus" class="success-message"></div>
+        </form>
+        <div class="presentation-box">
+            <h2>Project Contact Details</h2>
+            <div class="profile-row"><span>Project</span><span>SaloneFarm Connect</span></div>
+            <div class="profile-row"><span>Module</span><span>DCOMP204 Web Design 1</span></div>
+            <div class="profile-row"><span>Group</span><span>Group 10</span></div>
+            <div class="profile-row"><span>Email</span><span>salonefarmconnect@example.com</span></div>
+            <br>
+            <h3>How It Works</h3>
+            <ol class="number-list">
+                <li>Fill in your name, contact detail, subject, and message.</li>
+                <li>Submit the form to see an on-screen confirmation.</li>
+                <li>In a future full system, messages would be emailed or stored in a support inbox.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="footer-logo">
+            <h3>SaloneFarm Connect</h3>
+            <p>A static Web Design 1 digital agriculture solution focused on Sierra Leone.</p>
+        </div>
+        <div>
+            <h4>Project Pages</h4>
+            <a href="advisory.html">Advisory</a>
+            <a href="market.html">Market</a>
+            <a href="farmer-dashboard.html">Farmer Dashboard</a>
+            <a href="cart.html">Order Cart</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>SDG Alignment</h4>
+            <p>SDG 2: Zero Hunger</p>
+            <p>SDG 8: Decent Work</p>
+            <p>SDG 9: Innovation</p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 SaloneFarm Connect • Group 10 • DCOMP204 Web Design 1</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisory | SaloneFarm Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <meta name="description" content="SaloneFarm Connect is a Sierra Leone digital agriculture static website prototype for farmer advisory and market access.">
+</head>
+<body data-page="advisory">
+<header class="site-header">
+    <nav class="navbar container">
+        <a class="brand" href="index.html" aria-label="SaloneFarm Connect home">
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="logo-img">
+            <div class="brand-text">
+                <strong>SaloneFarm Connect</strong>
+                <span>Farmer Advisory & Market Access</span>
+            </div>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="advisory.html" class="active">Advisory</a></li>
+            <li><a href="market.html" class="">Market</a></li>
+            <li><a href="farmer-dashboard.html" class="">Farmer</a></li>
+            <li><a href="cart.html" class="">Cart</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+            <li data-auth="guest"><a href="login.html" class="">Login</a></li>
+            <li data-auth="guest"><a href="register.html" class="">Register</a></li>
+            <li data-auth="user"><a href="profile.html" class="">Profile</a></li>
+            <li data-auth="user"><a href="#" id="logoutLink" class="">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+<section class="sub-hero page-section">
+    <div class="container sub-hero-grid">
+        <div>
+            <span class="eyebrow">Farmer Advisory</span>
+            <h1>Crop tips, district advice, pest alerts, and seasonal recommendations.</h1>
+            <p>These tools use basic JavaScript to provide interactive guidance for farmers. In a real system, these would connect to expert data, weather APIs, and agricultural officers.</p>
+        </div>
+        <img src="images/rice-fields-rokupr.jpg" alt="Rice fields in Rokupr Sierra Leone">
+    </div>
+</section>
+<section class="page-section">
+    <div class="container tools-grid">
+        <div class="tool-box">
+            <h3>Crop Recommendation</h3>
+            <label for="districtSelect">Select district</label>
+            <select id="districtSelect"><option>Bo</option><option>Kenema</option><option>Bombali</option><option>Kambia</option><option>Western Area</option></select>
+            <label for="seasonSelect">Select season</label>
+            <select id="seasonSelect"><option>Rainy Season</option><option>Dry Season</option></select>
+            <button class="btn primary" onclick="recommendCrop()">Get Advice</button>
+            <p id="cropAdvice" class="result-box"></p>
+        </div>
+        <div class="tool-box">
+            <h3>Pest Alert</h3>
+            <label for="pestCrop">Select crop</label>
+            <select id="pestCrop"><option>Rice</option><option>Cassava</option><option>Vegetables</option><option>Groundnut</option></select>
+            <button class="btn primary" onclick="showPestAlert()">Check Pest Risk</button>
+            <p id="pestAdvice" class="result-box"></p>
+        </div>
+        <div class="tool-box">
+            <h3>Market Price Checker</h3>
+            <label for="priceCrop">Select produce</label>
+            <select id="priceCrop"><option>Rice</option><option>Cassava</option><option>Palm Oil</option><option>Vegetables</option></select>
+            <button class="btn primary" onclick="checkMarketPrice()">Check Price</button>
+            <p id="priceAdvice" class="result-box"></p>
+        </div>
+    </div>
+</section>
+
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="footer-logo">
+            <h3>SaloneFarm Connect</h3>
+            <p>A static Web Design 1 digital agriculture solution focused on Sierra Leone.</p>
+        </div>
+        <div>
+            <h4>Project Pages</h4>
+            <a href="advisory.html">Advisory</a>
+            <a href="market.html">Market</a>
+            <a href="farmer-dashboard.html">Farmer Dashboard</a>
+            <a href="cart.html">Order Cart</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>SDG Alignment</h4>
+            <p>SDG 2: Zero Hunger</p>
+            <p>SDG 8: Decent Work</p>
+            <p>SDG 9: Innovation</p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 SaloneFarm Connect • Group 10 • DCOMP204 Web Design 1</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | SaloneFarm Connect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <meta name="description" content="SaloneFarm Connect is a Sierra Leone digital agriculture static website prototype for farmer advisory and market access.">
+</head>
+<body data-page="register">
+<header class="site-header">
+    <nav class="navbar container">
+        <a class="brand" href="index.html" aria-label="SaloneFarm Connect home">
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="logo-img">
+            <div class="brand-text">
+                <strong>SaloneFarm Connect</strong>
+                <span>Farmer Advisory & Market Access</span>
+            </div>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="advisory.html" class="">Advisory</a></li>
+            <li><a href="market.html" class="">Market</a></li>
+            <li><a href="farmer-dashboard.html" class="">Farmer</a></li>
+            <li><a href="cart.html" class="">Cart</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+            <li data-auth="guest"><a href="login.html" class="">Login</a></li>
+            <li data-auth="guest"><a href="register.html" class="active">Register</a></li>
+            <li data-auth="user"><a href="profile.html" class="">Profile</a></li>
+            <li data-auth="user"><a href="#" id="logoutLink" class="">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+<section class="sub-hero page-section">
+    <div class="container sub-hero-grid">
+        <div>
+            <span class="eyebrow">Registration</span>
+            <h1 id="registerTitle">Create a farmer or customer profile.</h1>
+            <p>After registration, your details are saved in the browser and displayed on the profile page. Farmers can publish products from their dashboard, while customers can order from the marketplace.</p>
+        </div>
+        <img src="images/freetown-small-farm.jpg" alt="Small urban farm in Freetown Sierra Leone">
+    </div>
+</section>
+<section class="page-section">
+    <div class="container auth-grid">
+        <form id="registerForm" class="panel-form auth-form">
+            <h2>Create Profile</h2>
+            <div class="form-grid">
+                <div><label>Full Name</label><input id="regName" placeholder="Enter full name" required></div>
+                <div><label>Account Type</label><select id="regRole"><option value="farmer">Farmer</option><option value="customer">Customer</option></select></div>
+                <div><label>District</label><input id="regDistrict" placeholder="Example: Bo, Kenema, Bombali" required></div>
+                <div><label>Phone</label><input id="regPhone" placeholder="Enter phone number" required></div>
+                <div><label>Email</label><input id="regEmail" type="email" placeholder="Optional email"></div>
+                <div><label>Password</label><input id="regPassword" type="password" placeholder="Create password" required></div>
+                <div><label>Confirm Password</label><input id="regConfirmPassword" type="password" placeholder="Confirm password" required></div>
+                <div><label>Main Interest</label><input id="regInterest" placeholder="Example: rice farming, buying cassava, selling vegetables"></div>
+            </div>
+            <label>Short Bio / Business Description</label><textarea id="regBio" placeholder="Tell us about your farm, business, or buying needs"></textarea>
+            <button class="btn primary" type="submit">Create Account</button>
+            <div class="social-login">
+                <button class="social-btn google" type="button">Sign up with Google</button>
+                <button class="social-btn facebook" type="button">Sign up with Facebook</button>
+            </div>
+            <div id="registerMessage" class="success-message"></div>
+            <p class="small-note">Already have an account? <a class="text-link" href="login.html">Login here</a>.</p>
+        </form>
+        <div id="existingAccountBox" class="presentation-box existing-account" style="display:none;">
+            <h2>Account Already Created</h2>
+            <p>You already have a saved profile in this browser, so the create account form is hidden like a normal website after registration.</p>
+            <div class="stacked-buttons">
+                <a href="profile.html" class="btn primary">View Profile</a>
+                <a href="login.html" class="btn secondary">Go to Login</a>
+                <button class="btn danger" type="button" onclick="clearProfile()">Logout / Reset Account</button>
+            </div>
+        </div>
+        <div class="presentation-box">
+            <h2>How It Works</h2>
+            <ol class="number-list">
+                <li>Create an account as a farmer or customer.</li>
+                <li>Your details appear on the profile page.</li>
+                <li>Farmers publish produce from their dashboard.</li>
+                <li>Customers add products to cart from the market page.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="images/logo.svg" alt="SaloneFarm Connect logo" class="footer-logo">
+            <h3>SaloneFarm Connect</h3>
+            <p>A static Web Design 1 digital agriculture solution focused on Sierra Leone.</p>
+        </div>
+        <div>
+            <h4>Project Pages</h4>
+            <a href="advisory.html">Advisory</a>
+            <a href="market.html">Market</a>
+            <a href="farmer-dashboard.html">Farmer Dashboard</a>
+            <a href="cart.html">Order Cart</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>SDG Alignment</h4>
+            <p>SDG 2: Zero Hunger</p>
+            <p>SDG 8: Decent Work</p>
+            <p>SDG 9: Innovation</p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 SaloneFarm Connect • Group 10 • DCOMP204 Web Design 1</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
